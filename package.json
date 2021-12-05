@@ -1,0 +1,23 @@
+{
+  "name": "my-gaming-house",
+  "version": "1.0.0",
+  "description": "A game library to save, record and share your experiences on games",
+  "main": "index.js",
+  "author": "Nathan, Ewen",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "jest": "^27.4.3"
+  },
+  "dependencies": {
+    "argon2": "^0.28.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.14"
+  }
+}

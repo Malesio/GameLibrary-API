@@ -1,0 +1,11 @@
+# Jest coverage reports
+coverage
+
+# Node modules
+node_modules
+
+# npm/yarn lock file
+*.lock
+
+# Mongo files
+mongodb
