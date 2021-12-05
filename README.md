@@ -24,12 +24,23 @@ yarn install
 
 ### MongoDB server
 
-Next, ensure that a MongoDB server is running on your local machine or any other remotely accessible machine on your network. You can also deploy a dedicated MongoDB server using `docker-compose` and the `docker-compose.yml` configuration file provided:
+Ensure that a MongoDB server is running on your local machine or any other remotely accessible machine on your network. You can also deploy a dedicated MongoDB server using `docker-compose` and the `docker-compose.yml` configuration file provided:
 
 ```bash
 # Start the MongoDB server in the background
 docker-compose up -d
 ```
+
+Next, you can restore existing data provided into your Mongo cluster by entering the following commands in a shell that have access to the Mongo backup utilities:
+
+```bash
+# Unzip dump archive
+unzip mygaminghouse.zip -d dump
+# Restore dump using your mongo credentials
+mongorestore -u root
+```
+
+You can then check that the restoration succeeded by looking for the `mygaminghouse` database, and see its `users` and `games` collections filled with data.
 
 ### Environment configuration
 
